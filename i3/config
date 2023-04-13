@@ -58,7 +58,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec kitty -c ~/.config/kitty/kitty.conf 
+bindsym $mod+Return exec --no-startup-id kitty -c ~/.config/kitty/kitty.conf 
 
 # kill focused window
 bindsym $mod+Shift+q kill
