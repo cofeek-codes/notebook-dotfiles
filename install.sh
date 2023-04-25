@@ -3,7 +3,8 @@ sudo pacman -S $(cat paclist) --needed --noconfirm
 sudo systemctl enable ly
 
 # fish part
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | fish && fisher install jorgebucaran/fisher | fish
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | fish 
+fisher install jorgebucaran/fisher | fish
 fisher install ilancosman/tide@v5 | fish
 fisher install jethrokuan/z | fish
 # fish part
