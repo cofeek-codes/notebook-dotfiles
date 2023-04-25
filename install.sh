@@ -31,6 +31,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
  
  #fonts
+ mkdir Downloads
  cd Downloads
  wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip 
  unzip Meslo.zip
