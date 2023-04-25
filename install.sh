@@ -1,12 +1,12 @@
-#!/usr/bin/env bash
+#!/usr/bin/env fish
 sudo pacman -S $(cat paclist) --needed --noconfirm
 sudo systemctl enable ly
 
 # fish part
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | fish 
-fisher install jorgebucaran/fisher | fish
-fisher install ilancosman/tide@v5 | fish
-fisher install jethrokuan/z | fish
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher install jorgebucaran/fisher
+fisher install ilancosman/tide@v5
+fisher install jethrokuan/z
 # fish part
 
 
