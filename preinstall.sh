@@ -1,3 +1,3 @@
-sudo pacman -S fish
-sudo chsh -s /usr/bin/fish
-sudo reboot
+sudo pacman -S $(cat paclist) --needed --noconfirm
+sudo systemctl enable ly
+chsh -s /usr/bin/fish
