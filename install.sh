@@ -28,13 +28,19 @@ git clone https://github.com/cofeek-codes/cofeek-codes-nvim.git ~/.config/nvim
 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
- 
+
  #fonts
  mkdir Downloads
- cd Downloads
- wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip 
- unzip Meslo.zip -d Meslo
- font-manager Meslo
- cd
- echo "completed"
- 
+
+ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip ~/Downloads
+ unzip ~/Downloads/Meslo.zip -d ~/Downloads/Meslo
+ cp ~/Downloads/Meslo ~/.local/share/fonts -r
+  fc-cache -f -v
+ #fonts
+# theme
+git clone https://github.com/cofeek-codes/dotfiles-main.git
+mv ~/dotfiles-main/theme/\(Modded\)\ Catppuccin-Mocha-Standard-Mauve-Dark/ ~/.themes
+# theme
+
+echo "completed"
+
