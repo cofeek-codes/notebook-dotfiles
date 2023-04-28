@@ -30,16 +30,17 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
  #fonts
- mkdir Downloads
+ mkdir ~/Downloads
 
- wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip ~/Downloads
+ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip
+ mv ./Meslo.zip ~/Downloads/
  unzip ~/Downloads/Meslo.zip -d ~/Downloads/Meslo
- cp ~/Downloads/Meslo ~/.local/share/fonts -r
-  fc-cache -f -v
+
  #fonts
 # theme
-git clone https://github.com/cofeek-codes/dotfiles-main.git
-mv ~/dotfiles-main/theme/\(Modded\)\ Catppuccin-Mocha-Standard-Mauve-Dark/ ~/.themes
+git clone https://github.com/cofeek-codes/dotfiles-main.git ~/
+mv ~/dotfiles-main/theme/ ~/.themes
+rm -rf ~/dotfiles-main/
 # theme
 
 echo "completed"
