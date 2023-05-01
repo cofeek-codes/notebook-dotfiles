@@ -38,7 +38,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
  #fonts
 # theme
-git clone https://github.com/cofeek-codes/dotfiles-main.git ~/
+git clone https://github.com/cofeek-codes/dotfiles-main.git ~/dotfiles-main
 mv ~/dotfiles-main/theme/ ~/.themes
 rm -rf ~/dotfiles-main/
 # theme
